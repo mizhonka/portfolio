@@ -1,35 +1,40 @@
-@import './base.css';
+@font-face {
+  font-family: Playfair;
+  src: url('~@assets/fonts/PlayfairDisplay-Medium.ttf');
+}
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@font-face {
+  font-family: Nunito;
+  src: url('~@assets/fonts/Nunito-Medium.ttf');
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: #ceb5d4;
+  font-family: 'Playfair', 'Times New Roman';
+  font-variant: small-caps;
+  font-weight: normal;
+  font-size: 90px;
+  margin: auto;
+}
+
+h2 {
+  color: #7d9fc0;
+  font-family: 'Nunito', 'Arial';
+  font-size: 45px;
   font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+.tagline {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.navBar {
+  color: white;
+  font-family: 'Playfair', 'Times New Roman';
 }
