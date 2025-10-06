@@ -1,11 +1,11 @@
 @font-face {
   font-family: Playfair;
-  src: url('~@assets/fonts/PlayfairDisplay-Medium.ttf');
+  src: url('../assets/fonts/PlayfairDisplay-Medium.ttf');
 }
 
 @font-face {
   font-family: Nunito;
-  src: url('~@assets/fonts/Nunito-Medium.ttf');
+  src: url('../assets/fonts/Nunito-Medium.ttf');
 }
 
 body {
@@ -36,5 +36,8 @@ h2 {
 
 .navBar {
   color: white;
+  font-size: xx-large;
   font-family: 'Playfair', 'Times New Roman';
+  --p-menubar-background: none;
+  --p-menubar-border-color: transparent;
 }
