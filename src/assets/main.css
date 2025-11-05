@@ -1,3 +1,7 @@
+@import 'tailwindcss';
+@import 'tailwindcss';
+@import 'tailwindcss-primeui';
+
 @font-face {
   font-family: Playfair;
   src: url('../assets/fonts/PlayfairDisplay-Medium.ttf');
