@@ -45,6 +45,8 @@ h2 {
   --p-tabs-tab-hover-color: #dff8eb;
   --p-tabs-active-bar-height: 3px;
   --p-tabs-active-bar-background: linear-gradient(#ceb5d4, #7d9fc0);
+  --p-tabs-tabpanel-background: transparent;
+  --p-tabs-tab-gap: 100px;
 }
 
 .tabColorBlue {
