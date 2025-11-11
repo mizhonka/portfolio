@@ -1,31 +1,33 @@
 <script setup lang="ts">
-import Menubar from 'primevue/menubar'
-import { ref } from 'vue'
-
-const menuItems = ref([
-  {
-    label: 'Home',
-  },
-  {
-    label: 'About',
-  },
-  {
-    label: 'Artwork',
-  },
-  {
-    label: 'Games',
-  },
-])
+import Tabs from 'primevue/tabs'
+import TabList from 'primevue/tablist'
+import Tab from 'primevue/tab'
+import TabPanels from 'primevue/tabpanels'
+import TabPanel from 'primevue/tabpanel'
 </script>
 
 <template>
   <body>
     <div class="navBar">
-      <Menubar :model="menuItems"></Menubar>
-    </div>
-    <div class="tagline">
-      <h1>Miranda Honkanen</h1>
-      <h2>artist and game developer</h2>
+      <Tabs value="0">
+        <TabList>
+          <Tab class="tabColorPink" value="0">Home</Tab>
+          <Tab class="tabColorBlue" value="1">About</Tab>
+          <Tab class="tabColorPink" value="2">Artwork</Tab>
+          <Tab class="tabColorBlue" value="3">Games</Tab>
+        </TabList>
+        <TabPanels>
+          <TabPanel value="0">
+            <div class="tagline">
+              <h1>Miranda Honkanen</h1>
+              <h2>artist and game developer</h2>
+            </div>
+          </TabPanel>
+          <TabPanel value="1"></TabPanel>
+          <TabPanel value="2"></TabPanel>
+          <TabPanel value="3"></TabPanel>
+        </TabPanels>
+      </Tabs>
     </div>
   </body>
 </template>
