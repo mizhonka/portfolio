@@ -4,6 +4,8 @@ import TabList from 'primevue/tablist'
 import Tab from 'primevue/tab'
 import TabPanels from 'primevue/tabpanels'
 import TabPanel from 'primevue/tabpanel'
+import Home from './components/Home.vue'
+import About from './components/About.vue'
 </script>
 
 <template>
@@ -18,13 +20,11 @@ import TabPanel from 'primevue/tabpanel'
         </TabList>
         <TabPanels>
           <TabPanel value="0">
-            <img src="./assets/icons/spider.png" h="800px" width="800px"></img>
-            <div class="tagline">
-              <h1>Miranda Honkanen</h1>
-              <h2>artist and game developer</h2>
-            </div>
+            <Home></Home>
           </TabPanel>
-          <TabPanel value="1"></TabPanel>
+          <TabPanel value="1">
+            <About></About>
+          </TabPanel>
           <TabPanel value="2"></TabPanel>
           <TabPanel value="3"></TabPanel>
         </TabPanels>
