@@ -4,8 +4,8 @@ import Skeleton from 'primevue/skeleton'
 
 <template>
   <body>
-    <div style="display: grid; grid-template-columns: 50% 50%">
-      <Skeleton width="800px" height="800px"></Skeleton>
+    <div style="display: grid; grid-template-columns: 45% 55%; padding: 5px">
+      <Skeleton style="left: 30px" width="700px" height="800px"></Skeleton>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
