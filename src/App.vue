@@ -6,6 +6,7 @@ import TabPanels from 'primevue/tabpanels'
 import TabPanel from 'primevue/tabpanel'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import Artwork from './components/Artwork.vue'
 </script>
 
 <template>
@@ -25,7 +26,9 @@ import About from './components/About.vue'
           <TabPanel value="1">
             <About></About>
           </TabPanel>
-          <TabPanel value="2"></TabPanel>
+          <TabPanel value="2">
+            <Artwork></Artwork>
+          </TabPanel>
           <TabPanel value="3"></TabPanel>
         </TabPanels>
       </Tabs>
