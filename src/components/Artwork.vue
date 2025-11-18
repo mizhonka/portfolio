@@ -2,35 +2,36 @@
 import Galleria from 'primevue/galleria'
 import { ref } from 'vue'
 
-import crawfishThumb from '../assets/images/crawfish-thumb.png'
-import shackThumb from '../assets/images/shack-thumb.png'
+import crawfishGif from '../assets/videos/crayfishidle.gif'
+import shackGif from '../assets/videos/shack0001-0240.gif'
 import grokeDress from '../assets/images/GrokeDress.png'
 
+import crawfishThumb from '../assets/thumbnails/CrawfishThumb.png'
+import shackThumb from '../assets/thumbnails/SeaShackThumb.png'
+import grokeThumb from '../assets/thumbnails/GrokeDressThumb.png'
+
 const images = [
-  { imageItem: crawfishThumb, alt: 'Crawfish Idle', title: '3D Model, 2023' },
   {
-    imageItem: shackThumb,
+    imageItem: crawfishGif,
+    thumbnail: crawfishThumb,
+    alt: 'Crayfish Idle',
+    title: '3D Model, 2023',
+  },
+  {
+    imageItem: shackGif,
+    thumbnail: shackThumb,
     alt: 'Sea Shack (Following a Tutorial by Grant Abbitt)',
     title: '3D Model, 2023',
   },
-  { imageItem: grokeDress, alt: 'Groke Dress', title: 'Digital Painting, 2022' },
+  {
+    imageItem: grokeDress,
+    thumbnail: grokeThumb,
+    alt: 'Groke Dress',
+    title: 'Digital Painting, 2022',
+  },
 ]
 
 const activeIndex = ref(0)
-const responsiveOptions = ref([
-  {
-    breakpoint: '1024px',
-    numVisible: 5,
-  },
-  {
-    breakpoint: '768px',
-    numVisible: 3,
-  },
-  {
-    breakpoint: '560px',
-    numVisible: 1,
-  },
-])
 const displayCustom = ref(false)
 
 const imageClick = (index: number) => {
@@ -45,7 +46,6 @@ const imageClick = (index: number) => {
       v-model:activeIndex="activeIndex"
       v-model:visible="displayCustom"
       :value="images"
-      :responsiveOptions="responsiveOptions"
       :numVisible="7"
       containerStyle="max-width: 850px"
       :circular="true"
@@ -57,11 +57,11 @@ const imageClick = (index: number) => {
         <img
           :src="slotProps.item.imageItem"
           :alt="slotProps.item.alt"
-          style="width: 100%; display: block"
+          style="display: block; width: 100%"
         />
       </template>
       <template #thumbnail="slotProps">
-        <img :src="slotProps.item.imageItem" :alt="slotProps.item.alt" style="display: block" />
+        <img :src="slotProps.item.thumbnail" :alt="slotProps.item.alt" style="display: block" />
       </template>
       <template #caption="slotProps">
         <div class="text-xl mb-2 font-bold">{{ slotProps.item.title }}</div>
@@ -69,10 +69,10 @@ const imageClick = (index: number) => {
       </template>
     </Galleria>
 
-    <div v-if="images" class="grid grid-cols-12 gap-4" style="max-width: 400px">
+    <div v-if="images" class="grid grid-cols-12 gap-4" style="max-width: 800px">
       <div v-for="(image, index) of images" :key="index" class="col-span-4">
         <img
-          :src="image.imageItem"
+          :src="image.thumbnail"
           :alt="image.alt"
           style="cursor: pointer"
           @click="imageClick(index)"
