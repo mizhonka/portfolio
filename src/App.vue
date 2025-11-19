@@ -8,6 +8,7 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Artwork from './components/Artwork.vue'
 import Socials from './components/Socials.vue'
+import Games from './components/Games.vue'
 </script>
 
 <template>
@@ -31,7 +32,9 @@ import Socials from './components/Socials.vue'
           <TabPanel value="2">
             <Artwork></Artwork>
           </TabPanel>
-          <TabPanel value="3"></TabPanel>
+          <TabPanel value="3">
+            <Games></Games>
+          </TabPanel>
           <TabPanel value="4">
             <Socials></Socials>
           </TabPanel>

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Skeleton from 'primevue/skeleton'
+import { Card } from 'primevue'
 </script>
 
 <template>
