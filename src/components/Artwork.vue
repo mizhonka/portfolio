@@ -69,7 +69,11 @@ const imageClick = (index: number) => {
       </template>
     </Galleria>
 
-    <div v-if="images" class="grid grid-cols-12 gap-4" style="max-width: 800px">
+    <div
+      v-if="images"
+      class="grid grid-cols-12 gap-4"
+      style="max-width: 800px; margin: auto; margin-top: 2rem"
+    >
       <div v-for="(image, index) of images" :key="index" class="col-span-4">
         <img
           :src="image.thumbnail"

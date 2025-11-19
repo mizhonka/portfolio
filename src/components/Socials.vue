@@ -33,6 +33,6 @@ import 'primeicons/primeicons.css'
 <style scoped>
 .logo {
   font-size: 1.5rem;
-  color: #7d9fc0;
+  color: #ceb5d4;
 }
 </style>

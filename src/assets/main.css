@@ -49,7 +49,7 @@ h2 {
 }
 
 .tagline {
-  position: absolute;
+  margin: auto;
   text-align: center;
   width: 50%;
   top: 50%;
