@@ -22,6 +22,17 @@ p {
   font-size: 30px;
 }
 
+a {
+  color: #7d9fc0;
+  font-family: 'Nunito', 'Arial';
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+a:hover {
+  color: #dff8eb;
+}
+
 h1 {
   color: #ceb5d4;
   font-family: 'Playfair', 'Times New Roman';
