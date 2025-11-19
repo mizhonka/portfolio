@@ -14,7 +14,7 @@ import Socials from './components/Socials.vue'
   <body>
     <div class="navBar">
       <Tabs value="0">
-        <TabList>
+        <TabList style="margin: auto">
           <Tab class="tabColorPink" value="0">Home</Tab>
           <Tab class="tabColorBlue" value="1">About</Tab>
           <Tab class="tabColorPink" value="2">Artwork</Tab>
