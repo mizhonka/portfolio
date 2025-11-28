@@ -8,7 +8,6 @@ import 'primeicons/primeicons.css'
   <body>
     <Card style="width: 50%; margin: auto; margin-bottom: 2rem; margin-top: 2rem; padding: 1rem">
       <template #title>
-        <span class="pi pi-github logo"> </span>
         <h2>GitHub</h2>
         <a href="https://github.com/mizhonka"> github.com/mizhonka</a>
       </template>
@@ -19,7 +18,6 @@ import 'primeicons/primeicons.css'
 
     <Card style="width: 50%; margin: auto; padding: 1rem">
       <template #title>
-        <span class="pi pi-palette logo"> </span>
         <h2>ArtStation</h2>
         <a href="https://www.artstation.com/mizhonka"> artstation.com/mizhonka</a>
       </template>
