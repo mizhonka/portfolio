@@ -76,7 +76,7 @@ const imageClick = (index: number) => {
     >
       <div v-for="(image, index) of images" :key="index" class="col-span-4">
         <img
-          class="hover:scale-90"
+          class="hover:scale-120"
           :src="image.thumbnail"
           :alt="image.alt"
           style="cursor: pointer"
