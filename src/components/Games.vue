@@ -23,7 +23,16 @@ const trenchesVisible = ref(false)
       </video>
     </Dialog>
 
-    <Card style="width: 25rem; overflow: hidden">
+    <Card
+      style="
+        width: 25rem;
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;
+        left: 25%;
+        margin-top: 2rem;
+      "
+    >
       <template #header>
         <img
           @click="fishVisible = true"
@@ -47,7 +56,16 @@ const trenchesVisible = ref(false)
       </template>
     </Card>
 
-    <Card style="width: 25rem; overflow: hidden">
+    <Card
+      style="
+        width: 25rem;
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;
+        right: 25%;
+        margin-top: 2rem;
+      "
+    >
       <template #header>
         <img
           @click="trenchesVisible = true"
