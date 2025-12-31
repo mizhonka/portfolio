@@ -43,7 +43,7 @@ const trenchesVisible = ref(false)
       </template>
       <template #title><h2>Go Fish - In Space!</h2></template>
       <template #subtitle>
-        <p>2021 - 2022</p>
+        <p>2022</p>
         <a href="https://mega.nz/file/KjwgUIqR#H4BYv7LE0evpjguPlPksRaEbAMNLK1pM44RUlq2kBkY"
           >Mega Download >></a
         ></template
