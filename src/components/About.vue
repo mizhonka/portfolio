@@ -9,16 +9,18 @@
     -->
     <div class="container">
       <div class="image">
-        <img src="../assets/images/GrokeDress.png" />
+        <img src="../assets/images/portrait.jpg" />
       </div>
       <div class="colum">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
+          Ever since I was a kid, I've been interested in various art forms; music, writing,
+          drawing, 3D sculpting...I also enjoyed playing video games, and got inspired by many indie
+          game developers.<br /><br />
+          I wish to make art that let's me experiment with different skills, and offers the viewer
+          immersion in an interactive setting. <br /><br />
+          I am a soon to be Bachelor of Science (University of Helsinki), majoring in computer
+          science. I wrote my bachelor's thesis about
+          <i>Procedural dungeon generation using genetic algorithms.</i>
         </p>
       </div>
     </div>
@@ -38,8 +40,8 @@
 .colum {
   flex-direction: column;
   margin: auto;
-  margin-right: 5rem;
   flex: 1;
+  padding-right: 5rem;
 }
 
 .image {
