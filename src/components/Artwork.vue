@@ -5,10 +5,12 @@ import { ref } from 'vue'
 import crawfishGif from '../assets/videos/crayfishidle.gif'
 import shackGif from '../assets/videos/shack0001-0240.gif'
 import grokeDress from '../assets/images/GrokeDress.png'
+import portrait from '../assets/images/portrait.jpg'
 
 import crawfishThumb from '../assets/thumbnails/CrawfishThumb.png'
 import shackThumb from '../assets/thumbnails/SeaShackThumb.png'
 import grokeThumb from '../assets/thumbnails/GrokeDressThumb.png'
+import portraitThumb from '../assets/thumbnails/portrait-thumb.jpg'
 
 const images = [
   {
@@ -28,6 +30,12 @@ const images = [
     thumbnail: grokeThumb,
     alt: 'Groke Dress',
     title: 'Digital Painting, 2022',
+  },
+  {
+    imageItem: portrait,
+    thumbnail: portraitThumb,
+    alt: 'A Burlesque Self Portrait',
+    title: 'Ink and Pencil on Paper, 2025',
   },
 ]
 
