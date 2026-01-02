@@ -2,11 +2,6 @@
 
 <template>
   <body>
-    <!--
-    Source - https://stackoverflow.com/a
-    Posted by Dhaval Jardosh
-    Retrieved 2025-12-29, License - CC BY-SA 4.0
-    -->
     <div class="container">
       <div class="image">
         <img src="../assets/images/portrait.jpg" />

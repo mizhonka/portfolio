@@ -14,6 +14,12 @@ import portraitThumb from '../assets/thumbnails/portrait-thumb.jpg'
 
 const images = [
   {
+    imageItem: portrait,
+    thumbnail: portraitThumb,
+    alt: 'A Burlesque Self Portrait',
+    title: 'Ink and Pencil on Paper, 2025',
+  },
+  {
     imageItem: crawfishGif,
     thumbnail: crawfishThumb,
     alt: 'Crayfish Idle',
@@ -30,12 +36,6 @@ const images = [
     thumbnail: grokeThumb,
     alt: 'Groke Dress',
     title: 'Digital Painting, 2022',
-  },
-  {
-    imageItem: portrait,
-    thumbnail: portraitThumb,
-    alt: 'A Burlesque Self Portrait',
-    title: 'Ink and Pencil on Paper, 2025',
   },
 ]
 
