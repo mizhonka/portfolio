@@ -38,20 +38,19 @@ h1 {
   font-family: 'Playfair', 'Times New Roman';
   font-variant: small-caps;
   font-weight: normal;
-  font-size: 90px;
+  font-size: 80px;
 }
 
 h2 {
   color: #7d9fc0;
   font-family: 'Nunito', 'Arial';
-  font-size: 45px;
+  font-size: 35px;
   font-weight: normal;
 }
 
 .tagline {
   margin: auto;
   text-align: center;
-  width: 50%;
   top: 50%;
   left: 50%;
 }
