@@ -54,7 +54,7 @@ export default {
 <style scoped>
 .container {
   display: flex;
-  width: 50%;
+  width: 70%;
   height: 400px;
   border: 2px solid #18181b;
   border-radius: 20px;
@@ -68,7 +68,7 @@ export default {
   margin: auto;
   flex: 1;
   text-align: center;
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 
 .image {
