@@ -13,7 +13,8 @@
 }
 
 body {
-  background-color: black;
+  background: url(../assets/images/sigil.png) no-repeat, black;
+  background-position: top;
 }
 
 p {
