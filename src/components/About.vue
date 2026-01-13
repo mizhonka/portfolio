@@ -13,8 +13,7 @@
           game developers.<br /><br />
           I wish to make art that let's me experiment with different skills, and offers the viewer
           immersion in an interactive setting. <br /><br />
-          I am a soon to be Bachelor of Science (University of Helsinki), majoring in computer
-          science. I wrote my bachelor's thesis about
+          I have graduated from University of Helsinki as a Bachelor of Computer Science. I wrote my bachelor's thesis about
           <i>Procedural dungeon generation using genetic algorithms.</i>
         </p>
       </div>
