@@ -1,10 +1,18 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { Image } from '@imagekit/vue'
+</script>
 
 <template>
   <body>
     <div class="container">
       <div class="image">
-        <img src="../assets/images/portrait.jpg" />
+        <Image 
+        url-endpoint="https://ik.imagekit.io/usgzwcpk4"
+        src="/Artwork/portrait.jpg"
+        width="600"
+        heigth="800"
+        alt="Self Portrait"
+        />
       </div>
       <div class="colum">
         <p>

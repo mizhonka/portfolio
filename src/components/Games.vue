@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import GameCard from './GameCard.vue'
 
-import { ref } from 'vue'
-
 import fishThumb from '../assets/thumbnails/gofish-thumb.png'
 import trenchesThumb from '../assets/thumbnails/trenches-thumb.png'
 import cardsThumb from '../assets/thumbnails/cards-thumb.jpg'
