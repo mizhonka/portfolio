@@ -19,8 +19,7 @@
           Ever since I was a kid, I've been interested in various art forms; music, writing,
           drawing, 3D sculpting...I also enjoyed playing video games, and got inspired by many indie
           game developers.<br /><br />
-          I wish to make art that let's me experiment with different skills, and offers the viewer
-          immersion in an interactive setting. <br /><br />
+          I make art with both traditional (e.g. pencil and ink) and digital (e.g. games and websites) mediums.  <br /><br />
           I have graduated from University of Helsinki as a Bachelor of Computer Science. I wrote my bachelor's thesis about
           <i>Procedural dungeon generation using genetic algorithms.</i>
         </p>
