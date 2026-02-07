@@ -2,38 +2,28 @@
 import Galleria from 'primevue/galleria'
 import { ref } from 'vue'
 
-import crawfishGif from '../assets/videos/crayfishidle.gif'
-import shackGif from '../assets/videos/shack0001-0240.gif'
-import grokeDress from '../assets/images/GrokeDress.png'
-import portrait from '../assets/images/portrait.jpg'
-
-import crawfishThumb from '../assets/thumbnails/CrawfishThumb.png'
-import shackThumb from '../assets/thumbnails/SeaShackThumb.png'
-import grokeThumb from '../assets/thumbnails/GrokeDressThumb.png'
-import portraitThumb from '../assets/thumbnails/portrait-thumb.jpg'
-
 const images = [
   {
-    imageItem: portrait,
-    thumbnail: portraitThumb,
+    imageItem: '../assets/images/portrait.jpg',
+    thumbnail: '../assets/thumbnails/portrait-thumb.jpg',
     alt: 'A Burlesque Self Portrait',
-    title: 'Ink and Pencil on Paper, 2025',
+    title: 'Ballpoint Pen and Pencil, 2025',
   },
   {
-    imageItem: crawfishGif,
-    thumbnail: crawfishThumb,
+    imageItem: '../assets/videos/crayfishidle.gif',
+    thumbnail: '../assets/thumbnails/CrawfishThumb.png',
     alt: 'Crayfish Idle',
     title: '3D Model, 2023',
   },
   {
-    imageItem: shackGif,
-    thumbnail: shackThumb,
+    imageItem: '../assets/videos/shack0001-0240.gif',
+    thumbnail: '../assets/thumbnails/SeaShackThumb.png',
     alt: 'Sea Shack (Following a Tutorial by Grant Abbitt)',
     title: '3D Model, 2023',
   },
   {
-    imageItem: grokeDress,
-    thumbnail: grokeThumb,
+    imageItem: '../assets/images/GrokeDress.png',
+    thumbnail: '../assets/thumbnails/GrokeDressThumb.png',
     alt: 'Groke Dress',
     title: 'Digital Painting, 2022',
   },
@@ -45,6 +35,10 @@ const displayCustom = ref(false)
 const imageClick = (index: number) => {
   activeIndex.value = index
   displayCustom.value = true
+}
+
+function imageUrl(imageSrc: string) {
+  return new URL(imageSrc, import.meta.url).href
 }
 </script>
 
@@ -63,13 +57,17 @@ const imageClick = (index: number) => {
     >
       <template #item="slotProps">
         <img
-          :src="slotProps.item.imageItem"
+          :src="imageUrl(slotProps.item.imageItem)"
           :alt="slotProps.item.alt"
           style="display: block; width: 100%"
         />
       </template>
       <template #thumbnail="slotProps">
-        <img :src="slotProps.item.thumbnail" :alt="slotProps.item.alt" style="display: block" />
+        <img
+          :src="imageUrl(slotProps.item.thumbnail)"
+          :alt="slotProps.item.alt"
+          style="display: block"
+        />
       </template>
       <template #caption="slotProps">
         <div class="text-xl mb-2 font-bold">{{ slotProps.item.title }}</div>
@@ -85,7 +83,7 @@ const imageClick = (index: number) => {
       <div v-for="(image, index) of images" :key="index" class="col-span-4">
         <img
           class="hover:scale-120"
-          :src="image.thumbnail"
+          :src="imageUrl(image.thumbnail)"
           :alt="image.alt"
           style="cursor: pointer"
           @click="imageClick(index)"
