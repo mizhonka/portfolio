@@ -3,12 +3,14 @@ import Dialog from 'primevue/dialog'
 import { ref } from 'vue'
 
 const dialogVisible = ref(false)
-var demoVideo = ''
-var demoTitle = ''
+let demoTitle = ''
 
 function displayVideo(title: string, demo: any) {
-  demoVideo = demo
   demoTitle = title
+}
+
+function imageUrl(imageSrc: string) {
+  return new URL(imageSrc, import.meta.url).href
 }
 </script>
 
@@ -22,7 +24,7 @@ export default {
   <body>
     <Dialog v-model:visible="dialogVisible" modal :header="demoTitle">
       <video width="640" height="360" controls>
-        <source :src="demoVideo" type="video/mp4" />
+        <source :src="imageUrl(video)" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </Dialog>
@@ -35,7 +37,7 @@ export default {
     <div class="container">
       <div class="image">
         <img
-          :src="thumbnail"
+          :src="imageUrl(thumbnail)"
           width="400px"
           height="400px"
           @click="(displayVideo(videoTitle, video), (dialogVisible = true))"
