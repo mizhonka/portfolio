@@ -4,26 +4,26 @@ import { ref } from 'vue'
 
 const images = [
   {
-    imageItem: '../assets/images/portrait.jpg',
-    thumbnail: '../assets/thumbnails/portrait-thumb.jpg',
+    imageItem: '/images/portrait.jpg',
+    thumbnail: '/thumbnails/portrait-thumb.jpg',
     alt: 'A Burlesque Self Portrait',
     title: 'Ballpoint Pen and Pencil, 2025',
   },
   {
-    imageItem: '../assets/videos/crayfishidle.gif',
-    thumbnail: '../assets/thumbnails/CrawfishThumb.png',
+    imageItem: '/videos/crayfishidle.gif',
+    thumbnail: '/thumbnails/CrawfishThumb.png',
     alt: 'Crayfish Idle',
     title: '3D Model, 2023',
   },
   {
-    imageItem: '../assets/videos/shack0001-0240.gif',
-    thumbnail: '../assets/thumbnails/SeaShackThumb.png',
+    imageItem: '/videos/shack0001-0240.gif',
+    thumbnail: '/thumbnails/SeaShackThumb.png',
     alt: 'Sea Shack (Following a Tutorial by Grant Abbitt)',
     title: '3D Model, 2023',
   },
   {
-    imageItem: '../assets/images/GrokeDress.png',
-    thumbnail: '../assets/thumbnails/GrokeDressThumb.png',
+    imageItem: '/images/GrokeDress.png',
+    thumbnail: '/thumbnails/GrokeDressThumb.png',
     alt: 'Groke Dress',
     title: 'Digital Painting, 2022',
   },
